@@ -1,0 +1,30 @@
+.ox-features{
+   &__cards{
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -16px;
+   }
+   .ox-feature{
+      width: calc(33.33% - 32px);
+      margin: 0 16px;
+      margin-bottom: 16px;
+   }
+}
+
+
+@media (max-width: 1024px) { 
+   .ox-features{
+      .ox-feature{
+         width: calc(50% - 32px);
+      }
+   }
+}
+
+@media (max-width: 768px) {
+   .ox-features{
+      .ox-feature{
+         width: calc(100% - 32px);
+         margin-bottom: 24px;
+      }
+   }
+}
