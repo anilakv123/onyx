@@ -2,23 +2,16 @@
 
 body {
    font-family: 'Inter', sans-serif;
-   font-size: 0.875rem;
+   font-size: rem(14px);
    font-weight: 400;
-   line-height: 1.25rem;
+   line-height: rem(20px);
    color: hsl(224, 8%, 64%);
    background-color: hsl(240, 20%, 3%);
 }
 
 .container{
-   max-width: 1216px;
+   max-width: calc(1072px + 16px);
    width: 100%;
+   padding: 0 16px;
    margin: 0 auto;
-}
-
-.ox-layout {
-   display: flex;
-   flex-direction: column;
-   width: 100%;
-   min-height: 100vh;
-   height: 100%;
 }

@@ -1,6 +1,3 @@
-
 export default function Footer() {
-  return (
-    <footer className="ox-footer">Footer</footer>
-  )
+   return <footer className="ox-footer"></footer>;
 }

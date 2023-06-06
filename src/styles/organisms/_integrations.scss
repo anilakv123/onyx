@@ -1,0 +1,13 @@
+.ox-integrations{
+   &__content{
+      padding: 42px 0;
+   }
+}
+
+@include media(sm){
+   .ox-integrations{
+      &__content{
+         padding: 24px 0;
+      }
+   }
+}

@@ -1,6 +1,8 @@
 .ox-feature{
-   text-align: center;
+   padding: 32px 24px;
+   
    &__id{
+      text-align: center;
       position: relative;
       display: flex;
       align-items: center;
@@ -8,8 +10,8 @@
       width: 60px;
       height: 60px;
       border-radius: 50%;
-      color: rgb(255, 255, 255);
-      background: rgba(255, 255, 255, 0.06);
+      color: hsl(0, 0%, 100%);
+      background: hsla(0, 0%, 100%, 0.06);
       margin: 24px auto;
       &::before{
          content: "";
@@ -20,11 +22,12 @@
          height: 85px;
          transform: translate(-50%, -50%);
          border-radius: 50%;
-         background: linear-gradient(0deg, rgba(54, 58, 63, 0.03) 0%, rgba(255, 255, 255, 0.03) 75%);
-
+         background: linear-gradient(0deg, hsla(213, 8%, 23%, 0.03) 0%, rgba(255, 255, 255, 0.03) 75%);
       }
    }
    &__desc{
+      text-align: center;
+      color: hsl(223, 9%, 84%);
       max-width: 70%;
       margin: 0 auto;
    }

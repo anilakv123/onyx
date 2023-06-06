@@ -10,10 +10,12 @@ export default function Features() {
    return (
       <div className="ox-features">
          <div className="container">
-            <div className="ox-features__cards">
-               {features.map((feature) => {
-                  return <Feature key={feature.id} {...feature} />;
-               })}
+            <div className="ox-features__content">
+               <div className="ox-features__cards">
+                  {features.map((feature) => {
+                     return <Feature key={feature.id} {...feature} />;
+                  })}
+               </div>
             </div>
          </div>
       </div>

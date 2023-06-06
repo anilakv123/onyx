@@ -1,0 +1,23 @@
+
+// mediaquery
+@mixin media($br-one, $br-two: null, $brs: ( sm: 640px, md: 768px, lg: 1024px, xl: 1280px)) {
+   $has-br-one: map-has-key($brs, $br-one);
+   $has-br-two: map-has-key($brs, $br-two);
+
+   @if $has-br-one or $has-br-two {
+      $br-one-value: map-get($brs, $br-one);
+      $br-two-value: map-get($brs, $br-two);
+
+      @if ($has-br-two) {
+         @media (min-width: rem($br-one-value)) and (max-width: rem($br-two-value)) {
+            @content;
+         }
+      } @else {
+         @media (min-width: rem($br-one-value)) {
+            @content;
+         }
+      }
+   } @else {
+      @warn 'one or both of your breakpoint doesn\'t exist';
+   }
+}
