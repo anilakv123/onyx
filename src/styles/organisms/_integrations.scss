@@ -1,13 +1,37 @@
 .ox-integrations{
    &__content{
-      padding: 42px 0;
+      padding: 52px 0;
+   }
+   &__cards{
+      display: flex;
+      flex-wrap: wrap;
+   }
+   .ox-application{
+      width: 100%;
+      margin: 0 0 32px 0;
    }
 }
 
 @include media(sm){
    .ox-integrations{
-      &__content{
-         padding: 24px 0;
+      &__cards{
+         margin: 0 -16px;
+      }
+      .ox-application{
+         width: calc(50% - 32px);
+         margin: 0 16px 32px 16px;
       }
    }
-}
+}  
+
+@include media(lg){
+   .ox-integrations{
+      &__cards{
+         margin: 0 -16px;
+      }
+      .ox-application{
+         width: calc(33.33% - 32px);
+         margin: 0 16px 32px 16px;
+      }
+   }
+}  

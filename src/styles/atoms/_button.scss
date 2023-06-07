@@ -1,0 +1,13 @@
+.ox-button{
+   padding: 8px 16px;
+
+
+   &--primary{
+      background-color: #db5b4d;
+      color: #fff;
+   }
+   &--secondary{
+      background-color: #212327;
+      color: #fff;
+   }
+}

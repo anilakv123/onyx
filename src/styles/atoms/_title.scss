@@ -1,9 +1,9 @@
-.ox-title{
-   font-size: 3rem;
+.ox-title {
+   font-size: rem(40px);
    font-weight: 500;
    line-height: 1.2;
    -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(to top, hsl(213, 8%, 23%), hsl(0, 0%, 100%) 80%);
-    -webkit-background-clip: text;
-    background-clip: text;
+   background-image: linear-gradient(to top,hsl(213, 8%, 23%),hsl(0, 0%, 100%) 80%);
+   -webkit-background-clip: text;
+   background-clip: text;
 }
