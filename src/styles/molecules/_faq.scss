@@ -1,0 +1,27 @@
+.ox-faq{
+   background-color: hsl(240, 7%, 8%);
+   border-radius: 8px;
+   padding: 32px 32px;
+   margin-bottom: 16px;
+   cursor: pointer;
+
+   &__qry{
+      font-size: rem(18px);
+      font-weight: 500;
+      -webkit-text-fill-color: transparent;
+      background-image: linear-gradient(to top,hsl(213, 8%, 23%),hsl(0, 0%, 100%) 80%);
+      -webkit-background-clip: text;
+      background-clip: text;
+   }
+   &__answrap{
+      max-height: 0;
+      overflow-y: hidden;
+      transition: max-height 300ms ease-in-out;
+      &--open{
+         max-height: 100%;
+      }
+   }
+   &__ans{
+      margin-top: 24px;
+   }
+}
